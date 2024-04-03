@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | Prodigy InfoTech</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="main-box">
+      <div class="search-box">
+        <i class="bx bxs-map"></i>
+        <input type="text" name="" id="" placeholder="Enter your location">
+        <button type="button" class="bx bx-search" id="search-btn"></button>
+      </div>
+      <div class="not-found box">
+        <img src="./Resources/5156008_2706577.svg" alt="">
+        <p>Oops!! Location not found :/</p>
+      </div>
+      <div class="weather-box">
+        <div class="weather-image">
+          <img src="./Resources/thunderstorm.png">
+        </div>
+        <div class="temperature">
+        </div>
+        <div class="condition">
+          Thunderstorm
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="bx bx-water"></i>
+            <div>
+              <span>Humidity</span><br>
+              <span id="humidity">10%</span>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="bx bx-wind"></i>
+            <div>
+              <span>Wind Speed</span><br>
+              <span id="wind">10kmph</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(120deg,#2403fc,#2500c3,#1e028c,#140459,#08032b);
+}
+.container{
+    background-color: white;
+    width: fit-content;
+    padding: 3%;
+    min-width: 320px;
+    transition: 0.5s all ease-in-out;
+    border-radius:40px;
+    text-align: center;
+    box-shadow: 0 0 40px rgb(81, 81, 81);
+}
+.search-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+    
+}
+.search-box i{
+    font-size: 2rem;
+    color: #005EA6;
+}
+.search-box input{
+    height: 2.5rem;
+    background: #c6e8f5;
+    padding: 0 2%;
+    width: 100%;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    margin: 0 3%;
+    text-align: center;
+}
+.search-box button{
+    height: 40px;
+    font-size: 1.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    background: #005EA6;
+    color: white;
+    transition: 0.2s all ease-in-out;
+}
+.search-box button:hover{
+    background-color: rgb(183, 183, 183);
+}
+.not-found{
+    display: none;
+}
+.not-found p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #0c0c62;
+}
+.weather-box{
+    padding: 5% 0;
+    display: none;
+}
+.weather-box .weather-image img{
+    height: 150px;
+}
+.weather-box .condition{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.weather-box .temperature{
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+.weather-box .weather-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.weather-details i{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    margin: 10% 0;
+}
+.weather-details div span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(150, 150, 150);
+}
+.weather-details #humidity,#wind{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
+
